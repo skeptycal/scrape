@@ -3,11 +3,11 @@
 language: python
 python:
   # - "2.7"
-  - "3.5"
-  - "3.6"
+  # - "3.5"
+  - "3.7"
 
   # PyPy versions
-  - "pypy3.5"
+  # - "pypy3.5"
 # Django Stuff:
 # env:
 #   - DJANGO_VERSION=1.10.8
@@ -35,7 +35,7 @@ install:
 script:
   - pytest
   # Fail if any of these files have warnings
-  - shellcheck myscripts/*.sh
+  # - shellcheck myscripts/*.sh
 after_success:
   # Upload coverage data to codecov
   - codecov
